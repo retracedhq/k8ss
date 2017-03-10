@@ -1,0 +1,45 @@
+{
+    "name": "k8ss",
+    "author": "Replicated, Inc.",
+    "version": "0.1.0",
+    "engines": {
+        "node": ">=6.10.0"
+    },
+    "license": "MIT",
+    "repository": "https://github.com/retracedhq/k8ss.git",
+    "bugs": {
+        "email": "bugs@retraced.io",
+        "url": "https://github.com/retracedhq/k8ss/issues"
+    },
+    "description": "Simple utility for getting and setting Kubernetes secrets using kubectl.",
+    "keywords": [
+        "k8s",
+        "secrets",
+        "kubernetes",
+        "kubectl",
+        "retraced",
+        "replicated"
+    ],
+    "contributors": [
+        "Joe Toscano <jtoscano42@gmail.com>"
+    ],
+    "bin": {
+        "k8ss": "lib/k8ss.js"
+    },
+    "files": [
+        "lib/*.js"
+    ],
+    "scripts": {
+        "prepublish": "rm -rf lib && tslint --project ./tsconfig.json && tsc -p ."
+    },
+    "devDependencies": {
+        "@types/commander": "^2.3.31",
+        "@types/js-yaml": "^3.5.29",
+        "tslint": "^4.5.1",
+        "typescript": "^2.2.1"
+    },
+    "dependencies": {
+        "commander": "^2.9.0",
+        "js-yaml": "^3.8.2"
+    }
+}
