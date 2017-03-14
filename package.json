@@ -3,7 +3,7 @@
     "author": "Replicated, Inc.",
     "version": "0.1.0",
     "engines": {
-        "node": ">=6.10.0"
+        "node": ">=6.0.0"
     },
     "license": "MIT",
     "repository": "https://github.com/retracedhq/k8ss.git",
@@ -34,12 +34,12 @@
     },
     "devDependencies": {
         "@types/commander": "^2.3.31",
-        "@types/js-yaml": "^3.5.29",
         "tslint": "^4.5.1",
         "typescript": "^2.2.1"
     },
     "dependencies": {
+        "cli-table": "^0.3.1",
         "commander": "^2.9.0",
-        "js-yaml": "^3.8.2"
+        "kubernetes-client": "https://github.com/retracedhq/kubernetes-client"
     }
 }
